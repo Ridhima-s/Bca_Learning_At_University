@@ -3,5 +3,19 @@
 
 int main()
 {
-  return 0;
+  int i,n,binary=0,reverse=0,rem=0;
+	printf("Enter a number : ");
+	scanf("%d",&n);
+	while(n>0)
+	{
+		binary=(binary*10)+n%2;
+		n=n/2;
+	 } 
+	 while(binary>=1)
+	 {
+	 	rem=binary%10;
+	 	reverse=(reverse*10)+rem;
+	 	binary=binary/10;
+	 }
+	 printf("%d",reverse);
 }

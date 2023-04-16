@@ -4,5 +4,31 @@
 
 int main()
 {
-  return 0;
+  int student[50];
+	int i,fail=0,pass=0,max;
+	for(i=0;i<50;i++)
+	{
+		printf("Enter marks of student %d ",i+1);
+		scanf("%d",&student[i]);
+	}
+	for(i=0;i<50;i++)
+	{
+		if(student[i]<50)
+		{
+			fail++;
+		}
+		else
+		    pass++;
+	}
+	max=student[0];
+	for(i=0;i<50;i++)
+	{
+		if(max<student[i])
+		{
+			max=student[i];
+		}
+	}
+	printf("maximum score in classs is %d \n",max);
+	printf("total %d students failed\n",fail);
+	printf("total %d students passed\n",pass);
 }

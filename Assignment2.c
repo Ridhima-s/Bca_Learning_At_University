@@ -2,6 +2,15 @@
 
 int main() 
 {
-  
+  int a,i,n,count=0;
+	a=8;
+	while(a%8==0)
+	{
+		count++;
+		printf("Enter a number: ");
+		scanf("%d",&a);
+	}
+	printf("The number is not valid anymoreeeee");
+	printf("\nCount of total valid inputs is: %d ",count-1);
   return 0;
 }
